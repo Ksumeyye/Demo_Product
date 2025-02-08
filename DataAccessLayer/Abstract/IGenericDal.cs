@@ -8,7 +8,7 @@ namespace DataAccessLayer.Abstract
 {
     public interface IGenericDal<T> where T : class //T değeri entitydir. Bu T bir classa dair özellikler üzerine almalı.
     {
-        void Inser(T t); //T isimli entityden üreyen bir t parametresi.
+        void Insert(T t); //T isimli entityden üreyen bir t parametresi.
         void Delete(T t);
         void Update(T t);
         List<T> GetList();
