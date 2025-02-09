@@ -13,6 +13,6 @@ namespace DataAccessLayer.Abstract
         void Update(T t);
         List<T> GetList();
 
-        T GetById(int id); // Id'ye göre Tdeğerini getir.
+        T GetById(int id); // Id'ye göre T değerini getir.
     }
 }
