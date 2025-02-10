@@ -1,0 +1,12 @@
+﻿@model EntityLayer.Concrete.Product
+@{
+    ViewData["Title"] = "AddProduct";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Ürün Ekleme Sayfası</h1>
+<form method="post">
+    @Html.LabelFor("Ürün Adı")
+    @Html.TextBoxFor(x=>x.Name, new {@class="form-control"})
+
+</form>
