@@ -6,7 +6,18 @@
 
 <h1>Ürün Ekleme Sayfası</h1>
 <form method="post">
-    @Html.LabelFor("Ürün Adı")
-    @Html.TextBoxFor(x=>x.Name, new {@class="form-control"})
-
+    @Html.LabelFor(x=>x.Name)
+    @Html.TextBoxFor(x=>x.Name,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Name)
+    <br />
+    @Html.LabelFor(x=>x.Price)
+    @Html.TextBoxFor(x=>x.Price,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Price)
+    <br />
+    @Html.LabelFor(x=>x.Stock)
+    @Html.TextBoxFor(x=>x.Stock,new {@class="form-control"})
+    @Html.ValidationMessageFor(x=>x.Stock)
+    <br />
+    <button class="btn btn-outline-primary">Kaydet</button>
 </form>
+
