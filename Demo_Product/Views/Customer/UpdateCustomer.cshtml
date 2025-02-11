@@ -12,6 +12,8 @@
     @Html.Label("Müşteri Şehri")
     @Html.TextBoxFor(x=>x.City,new {@class="form-control"})
     <br />
+    @Html.Label("Meslek")
+    @Html.TextBoxFor(x=>x.Job.Name,new {@class="form-control"})
     <button class="btn btn-outline-success">Güncelle</button>
 </form>
 
