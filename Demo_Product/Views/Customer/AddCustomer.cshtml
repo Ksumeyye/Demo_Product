@@ -12,8 +12,8 @@
     @Html.Label("Müşteri Şehri")
     @Html.TextBoxFor(x=>x.City,new {@class="form-control"})
     <br />
-    @Html.Label("Meslek")
-    @Html.TextBoxFor(x=>x.Job.Name,new {@class="form-control"})
+    @Html.Label("Meslek Seçiniz")
+    @Html.DropDownListFor(x=>x.JobID,(List<SelectListItem>)ViewBag.v,new {@class="form-control"})
     <br />
     <button class="btn btn-outline-success">Kaydet</button>
 </form>

@@ -1,4 +1,5 @@
 ﻿using EntityLayer.Concrete;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete
 {
-    public class Context : DbContext // DbContext sınıfından miras alınır.
+    public class Context : IdentityDbContext // DbContext sınıfından miras alınır.
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
