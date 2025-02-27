@@ -1,4 +1,4 @@
-﻿
+﻿@model Demo_Product.Models.UserRegisterViewModel
 @{
     Layout = null;
 }
@@ -33,37 +33,45 @@
                                                 <div class="form-floating mb-3 mb-md-0">
                                                     <input class="form-control" name="Name" id="inputFirstName" type="text" />
                                                     <label for="inputFirstName">Adınız</label>
+                                                    <span asp-validation-for="Name"></span>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-floating">
                                                     <input class="form-control" name="SurName" id="inputLastName" type="text" />
                                                     <label for="inputLastName">Soyadınız</label>
+                                                    <span asp-validation-for="SurName"></span>
                                                 </div>
                                             </div>
-                                        </div>
+                                         </div>
                                         <div class="form-floating mb-3">
                                             <input class="form-control" name="Email" id="inputEmail" type="email" />
                                             <label for="inputEmail">Email Adresiniz</label>
+                                            <span asp-validation-for="Email"></span>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input class="form-control" name="UserName" id="inputUserName" type="email"/>
+                                            <input class="form-control" name="UserName" id="inputUserName" type="text"/>
                                             <label for="inputEmail">Kullanıcı Adı</label>
+                                            <span asp-validation-for="UserName"></span>
                                         </div>
+                                     
                                         <div class="row mb-3">
                                             <div class="col-md-6">
                                                 <div class="form-floating mb-3 mb-md-0">
                                                     <input class="form-control" name="Password" id="inputPassword" type="password"/>
                                                     <label for="inputPassword">Şifreniz</label>
+                                                    <span asp-validation-for="Password"></span>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="form-floating mb-3 mb-md-0">
                                                     <input class="form-control" name="ConfirmPassword" id="inputPasswordConfirm" type="password" />
                                                     <label for="inputPasswordConfirm">Tekrar Şifreniz</label>
+                                                    <span asp-validation-for="ConfirmPassword"></span>
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="text-danger" asp-validation-summary="ModelOnly"></div> <!--Kayıt olurken gerekli şartları belirtir.-->
                                         <button class="btn btn-primary btn-block">Hesap Oluştur</button>
                                     </form>
                                 </div>
