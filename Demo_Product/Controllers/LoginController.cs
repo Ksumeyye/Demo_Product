@@ -1,6 +1,8 @@
-﻿using EntityLayer.Concrete;
+﻿using Demo_Product.Models;
+using EntityLayer.Concrete;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
 namespace Demo_Product.Controllers
 {
@@ -18,9 +20,22 @@ namespace Demo_Product.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Index()
+        public async Task<IActionResult> Index(UserLoginViewModel p)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                var result = await _signInManager.PasswordSignInAsync(p.UserName, p.Password, false, true);
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "Category");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Kullanıcı adı veya şifre hatalı");
+                }
+            }
+                return View();
         }
     }
 }
