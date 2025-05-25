@@ -1,8 +1,61 @@
-Demo_ Product <br>
-* Bu projede çok katmanlı mimari yapısını kullanarak ürün ve müşteri işlemlerini yöneten bir web uygulaması geliştirdim. Projede ASP.NET Core MVC, Entity Framework Core, Identity ve Fluent Validation teknolojilerinden faydalandım. <br>
-* İlk olarak sınıf yapıları ve property tanımlamalarıyla temel modelleri oluşturdum. Kalıtım ve tasarımsal iyileştirmeler yaparak kod tekrarını minimuma indirdim. <br>
-* Ürün işlemleri kapsamında ürün listeleme, yeni ürün ekleme, silme ve güncelleme gibi CRUD işlemlerini gerçekleştirdim. Ardından müşteri işlemleri için controller ve view yapıları oluşturarak müşterilere ait bilgilerin yönetimini sağladım. <br>
-* N katmanlı mimari yapısında entity, repository, service ve controller katmanlarını ayırarak kodun sorumluluklarını netleştirdim. Generic repository yapısıyla tekrar eden veri erişim kodlarını soyutladım. Migration işlemleriyle veritabanı yapısını oluşturup Entity Framework üzerinden işlemleri yönettim. <br>
-* Business katmanında servis ve manager sınıflarıyla iş mantığını yazdım. Fluent Validation kütüphanesi ile veri doğrulama işlemlerini gerçekleştirdim. <br>
-* Son olarak kullanıcı kayıt ve giriş işlemlerini Identity yapısıyla entegre ettim. Register ve login işlemlerinin yanı sıra kullanıcı bilgilerinin düzenlenmesi, çıkış yapma ve ayarlar gibi işlemleri de ekledim. <br>
-* Proje sonunda kod yapısını düzenledim ve refactor işlemlerini yaparak proje yapısını daha okunabilir ve sürdürülebilir hale getirdim. <br>
+<b> Demo_ Product <7b> <br>
+Bu projede, ASP.NET Core MVC mimarisiyle çok katmanlı (N Katmanlı) bir web uygulaması geliştirdim. Uygulamada ürün ve müşteri yönetimi, kullanıcı kayıt/giriş işlemleri ve ilişkilendirilmiş veri yönetimi gibi temel modüller yer almaktadır. <br>
+
+🚀 Proje Başlangıcı & Temeller<br>
+Projenin başlangıcında metot, property ve entity gibi temel kavramları öğrenerek ilerledim. DbContext sınıfı ve Code First Migration yapısını kullanarak veritabanını oluşturdum. Erişim belirleyiciler, parametreli metotlar ve kalıtım gibi OOP (nesne yönelimli programlama) kavramlarını uyguladım. Kod yapısını tasarımsal olarak iyileştirdim.<br>
+
+🛒 Ürün İşlemleri<br>
+Ürünleri listeledim, ekledim, sildim ve güncelledim.<br>
+
+Her bir işlem için ayrı controller metotları, view dosyaları ve validasyonlar oluşturdum.<br>
+
+👥 Müşteri İşlemleri<br>
+Müşterilere özel controller ve view yapıları hazırladım.<br>
+
+Controller içinde şart kontrolleri uygulayarak veri güvenliğini sağladım.<br>
+
+🧱 N Katmanlı Mimari<br>
+Projeyi 3 ana katmanda yapılandırdım:<br>
+
+Entity Katmanı: Veri modellerini içerir.<br>
+Data Katmanı: Repository ve Generic Repository yapısıyla veri işlemlerini yönettim.<br>
+
+Business Katmanı: Servis ve manager yapıları ile iş kurallarını belirledim.<br>
+
+🔧 Business & Fluent Validation<br>
+Business service sınıflarıyla işlemleri yönettim. FluentValidation kütüphanesi ile kullanıcıdan gelen veriler üzerinde doğrulamalar yaptım.<br>
+
+🎨 UI (Kullanıcı Arayüzü) Katmanı<br>
+Layout ve Partial View yapılarıyla sayfaları dinamikleştirdim.<br>
+
+Bootstrap ve Font Awesome ikonlar kullanarak görsel iyileştirmeler yaptım.<br>
+
+DropDown List kullanarak kullanıcıların meslek seçimini sağladım.<br>
+
+🔗 İlişkiler & Job Tablosu<br>
+Job tablosunu oluşturdum ve diğer tablolarla ilişkilendirdim. Include metodunu kullanarak ilişkili verileri çektim. Meslek seçimi için dropdown listeleri ve güncelleme işlemlerini tamamladım.<br>
+
+🔐 Identity Giriş/Kayıt Sistemi<br>
+ASP.NET Identity kütüphanesini projeye entegre ettim.<br>
+
+AppUser sınıfı ile kullanıcı modelini oluşturdum.<br>
+
+Kullanıcı kayıt, giriş, çıkış ve profil bilgileri düzenleme işlemlerini gerçekleştirdim.<br>
+
+Error Identity Describer sınıfı ile hata mesajlarını özelleştirdim.<br>
+
+🛠️ Genel Teknikler<br>
+ASP.NET Core MVC<br>
+
+Entity Framework Core (Code First)<br>
+
+N Katmanlı Mimari<br>
+
+Repository & Generic Repository Pattern<br>
+
+Fluent Validation<br>
+
+Identity Kullanıcı Yönetimi<br>
+
+Bootstrap / Razor View / Partial View<br>
+
