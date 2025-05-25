@@ -1,4 +1,4 @@
-Demo_ Product 
+Demo_ Product <br>
    Bu projede çok katmanlı mimari yapısını kullanarak ürün ve müşteri işlemlerini yöneten bir web uygulaması geliştirdim. Projede ASP.NET Core MVC, Entity Framework Core, Identity ve Fluent Validation teknolojilerinden faydalandım. <br>
 İlk olarak sınıf yapıları ve property tanımlamalarıyla temel modelleri oluşturdum. Kalıtım ve tasarımsal iyileştirmeler yaparak kod tekrarını minimuma indirdim. <br>
 Ürün işlemleri kapsamında ürün listeleme, yeni ürün ekleme, silme ve güncelleme gibi CRUD işlemlerini gerçekleştirdim. Ardından müşteri işlemleri için controller ve view yapıları oluşturarak müşterilere ait bilgilerin yönetimini sağladım. <br>
