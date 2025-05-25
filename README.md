@@ -1,4 +1,4 @@
-<b> Demo_ Product <7b> <br>
+<b> Demo_ Product <b> <br>
 Bu projede, ASP.NET Core MVC mimarisiyle çok katmanlı (N Katmanlı) bir web uygulaması geliştirdim. Uygulamada ürün ve müşteri yönetimi, kullanıcı kayıt/giriş işlemleri ve ilişkilendirilmiş veri yönetimi gibi temel modüller yer almaktadır. <br>
 
 🚀 Proje Başlangıcı & Temeller<br>
